@@ -17,6 +17,12 @@
     line-height: 24px;
     color: rgba($gray-placeholder, 0.5);
   }
+
+  @media (max-width: $m-end) {
+    @include size(321px, 48px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .form__btn {
@@ -28,4 +34,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+  @media (max-width: $m-end) {
+    padding: 16px 50px 15px 50px;
+  }
 }

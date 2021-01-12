@@ -64,6 +64,9 @@ ul {
 .close {
   display: none; }
 
+.close__line {
+  display: none; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -119,82 +122,127 @@ ul {
   position: relative; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/bike-desk.jpg"); } }
-  .header--opened {
-    padding-top: 0; }
-    @media (max-width: 1023px) {
-      .header--opened .menu {
-        position: absolute;
-        width: 100%;
-        padding: 0;
-        left: 0;
-        padding-top: 100px;
-        background-color: #ffffff;
-        padding-bottom: 137px;
-        z-index: 1; }
-      .header--opened .menu__list {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        padding: 0; }
-      .header--opened .close {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 51px;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        border: 0;
-        background-color: #ffffff; }
-        .header--opened .close:before, .header--opened .close:after {
+      background-image: url("../img/bike-desk2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .header {
+      background-image: url("../img/bike-tabl.jpg");
+      background-size: 100% 341px;
+      background-color: #ffffff;
+      padding-bottom: 30px; }
+      .header--opened {
+        padding-top: 0; }
+        .header--opened .menu {
+          position: absolute;
+          width: 100%;
+          padding: 0;
+          left: 0;
+          padding-top: 100px;
+          background-color: #ffffff;
+          padding-bottom: 137px;
+          z-index: 1; }
+        .header--opened .menu__list {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding: 0; }
+        .header--opened .close {
           content: "";
           display: block;
           position: absolute;
-          -webkit-transform: rotate(45deg);
-                  transform: rotate(45deg);
-          width: 36px;
+          width: 50px;
+          height: 51px;
+          top: 0;
+          right: 0;
+          z-index: 1;
+          border: 0;
+          background-color: #ffffff; }
+          .header--opened .close:before, .header--opened .close:after {
+            content: "";
+            display: block;
+            position: absolute;
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            width: 36px;
+            height: 1px;
+            background-color: rgba(20, 21, 23, 0.2); }
+          .header--opened .close:after {
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg); }
+        .header--opened .menu__link {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 140%;
+          color: #48494D; }
+        .header--opened .menu__item {
+          width: 100%;
+          background-color: #F6F6F6;
+          max-width: 100%;
+          padding: 17px;
+          padding-right: 36px;
+          margin-bottom: 28px;
+          position: relative; }
+          .header--opened .menu__item:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-image: url("../img/icon-arrow.svg");
+            background-repeat: no-repeat;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            background-position: center;
+            right: 17px; }
+        .header--opened .menu__item:last-child {
+          margin-bottom: 0; }
+      .header--closed {
+        padding-top: 24px; }
+        .header--closed .menu {
+          margin-bottom: 0; }
+        .header--closed .menu__list {
+          display: none; }
+        .header--closed .close {
+          display: block;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 0;
+          right: 0;
+          background-color: #0AD9C6;
+          border: 0; }
+        .header--closed .close__line {
+          display: block;
+          position: absolute;
+          width: 21px;
           height: 1px;
-          background-color: rgba(20, 21, 23, 0.2); }
-        .header--opened .close:after {
-          -webkit-transform: rotate(-45deg);
-                  transform: rotate(-45deg); }
-      .header--opened .menu__link {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 140%;
-        color: #48494D; }
-      .header--opened .menu__item {
-        width: 100%;
-        background-color: #F6F6F6;
-        max-width: 100%;
-        padding: 17px;
-        padding-right: 36px;
-        margin-bottom: 28px;
-        position: relative; }
-        .header--opened .menu__item:after {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 25px;
-          height: 25px;
-          background-image: url("../img/icon-arrow.svg");
-          background-repeat: no-repeat;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%);
-          background-position: center;
-          right: 17px; }
-      .header--opened .menu__item:last-child {
-        margin-bottom: 0; } }
+          background-color: #000000;
+          left: 15px; }
+          .header--closed .close__line:before, .header--closed .close__line:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 21px;
+            height: 1px;
+            background-color: #000000;
+            top: 6px; }
+          .header--closed .close__line:before {
+            top: -7px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+    .header {
+      background-image: url("../img/bike-tabl.jpg"); } }
 
 .header__logo {
   display: block;
   width: 67px;
   height: 22px;
   margin-bottom: 31px; }
+  @media (max-width: 1023px) {
+    .header__logo {
+      margin-bottom: 89px; } }
 
 .header__promo {
   padding-left: 14.7%;
@@ -203,11 +251,24 @@ ul {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 238px; }
+  @media (max-width: 1023px) {
+    .header__promo {
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .header__desc {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 5%; }
+  @media (max-width: 1023px) {
+    .header__desc {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      padding: 0;
+      padding-bottom: 118px; } }
 
 .header__slogan {
   font-weight: bold;
@@ -216,6 +277,12 @@ ul {
   letter-spacing: -0.005em;
   margin: 0;
   margin-bottom: 26px; }
+  @media (max-width: 1023px) {
+    .header__slogan {
+      font-size: 30px;
+      line-height: 42px;
+      text-align: center;
+      margin-bottom: 18px; } }
 
 .header__text {
   font-weight: 300;
@@ -224,13 +291,23 @@ ul {
   letter-spacing: -0.005em;
   opacity: 0.8;
   margin: 0; }
+  @media (max-width: 1023px) {
+    .header__text {
+      font-size: 18px;
+      line-height: 178%;
+      text-align: center;
+      padding: 0 172px; } }
 
 .header__form-container {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 12.7%;
-  padding-top: 6px;
-  display: none; }
+  padding-top: 6px; }
+  @media (max-width: 1023px) {
+    .header__form-container {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      padding: 34px 202px 0; } }
 
 .header__form-text {
   font-weight: 600;
@@ -240,6 +317,15 @@ ul {
   letter-spacing: -0.005em;
   margin: 0;
   margin-bottom: 19px; }
+  @media (max-width: 1023px) {
+    .header__form-text {
+      font-size: 18px;
+      line-height: 156%;
+      text-align: center;
+      letter-spacing: -0.005em;
+      color: #000000;
+      padding-top: 0;
+      margin-bottom: 29px; } }
 
 .logo {
   fill: #0AD9C6; }
@@ -321,6 +407,12 @@ ul {
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
+  @media (max-width: 1023px) {
+    .form__inp {
+      width: 321px;
+      height: 48px;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .form__btn {
   border: 0;
@@ -331,3 +423,6 @@ ul {
   font-weight: 600;
   font-size: 15px;
   line-height: 21px; }
+  @media (max-width: 1023px) {
+    .form__btn {
+      padding: 16px 50px 15px 50px; } }
