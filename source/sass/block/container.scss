@@ -4,4 +4,9 @@
   margin: 0 auto;
   padding-left: 6.7%;
   padding-right: 6.7%;
+
+  @media (max-width: $m-end){
+    width: 100%;
+    padding: 0 21px;
+  }
 }

@@ -104,6 +104,10 @@ ul {
   margin: 0 auto;
   padding-left: 6.7%;
   padding-right: 6.7%; }
+  @media (max-width: 1023px) {
+    .container {
+      width: 100%;
+      padding: 0 21px; } }
 
 .header {
   color: #ffffff;
@@ -111,10 +115,80 @@ ul {
   background-image: url("../img/bike-desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 22px; }
+  padding-top: 22px;
+  position: relative; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
       background-image: url("../img/bike-desk.jpg"); } }
+  .header--opened {
+    padding-top: 0; }
+    @media (max-width: 1023px) {
+      .header--opened .menu {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        left: 0;
+        padding-top: 100px;
+        background-color: #ffffff;
+        padding-bottom: 137px;
+        z-index: 1; }
+      .header--opened .menu__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0; }
+      .header--opened .close {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 51px;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        border: 0;
+        background-color: #ffffff; }
+        .header--opened .close:before, .header--opened .close:after {
+          content: "";
+          display: block;
+          position: absolute;
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          width: 36px;
+          height: 1px;
+          background-color: rgba(20, 21, 23, 0.2); }
+        .header--opened .close:after {
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+      .header--opened .menu__link {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: #48494D; }
+      .header--opened .menu__item {
+        width: 100%;
+        background-color: #F6F6F6;
+        max-width: 100%;
+        padding: 17px;
+        padding-right: 36px;
+        margin-bottom: 28px;
+        position: relative; }
+        .header--opened .menu__item:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background-image: url("../img/icon-arrow.svg");
+          background-repeat: no-repeat;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          background-position: center;
+          right: 17px; }
+      .header--opened .menu__item:last-child {
+        margin-bottom: 0; } }
 
 .header__logo {
   display: block;
@@ -155,7 +229,8 @@ ul {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 12.7%;
-  padding-top: 6px; }
+  padding-top: 6px;
+  display: none; }
 
 .header__form-text {
   font-weight: 600;

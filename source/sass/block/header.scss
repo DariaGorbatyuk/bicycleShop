@@ -5,11 +5,82 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 22px;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bike-desk.jpg");
   }
+
+  &--opened {
+    padding-top: 0;
+    @media (max-width: $m-end) {
+      .menu {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        left: 0;
+        padding-top: 100px;
+        background-color: $white;
+        padding-bottom: 137px;
+        z-index: 1;
+      }
+      .menu__list {
+        flex-direction: column;
+        padding: 0;
+      }
+      .close {
+        @include pseudo();
+        @include size(50px, 51px);
+        top: 0;
+        right: 0;
+        z-index: 1;
+        border: 0;
+        background-color: $white;
+
+        &:before,
+        &:after {
+          @include pseudo();
+          transform: rotate(45deg);
+          @include size(36px, 1px);
+          background-color: rgba($gray-close, 0.2);
+        }
+        &:after{
+          transform: rotate(-45deg);
+        }
+      }
+      .menu__link {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: $gray-menu-text;
+      }
+      .menu__item {
+        width: 100%;
+        background-color: $gray;
+        max-width: 100%;
+        padding: 17px;
+        padding-right: 36px;
+        margin-bottom: 28px;
+        position: relative;
+
+        &:after{
+          @include pseudo();
+          @include square(25px);
+          background-image: url("../img/icon-arrow.svg");
+          background-repeat: no-repeat;
+          top: 50%;
+          transform: translateY(-50%);
+          background-position: center;
+          right: 17px;
+        }
+      }
+      .menu__item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
+
 
 .header__logo {
   display: block;
@@ -52,6 +123,9 @@
   flex-basis: 50%;
   padding-left: 12.7%;
   padding-top: 6px;
+
+  //
+  display: none;
 }
 
 .header__form-text {
