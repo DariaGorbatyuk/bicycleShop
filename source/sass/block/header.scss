@@ -1,0 +1,65 @@
+.header {
+  color: $white;
+  background-color: $dark;
+  background-image: url("../img/bike-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 22px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-desk.jpg");
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 67px;
+  height: 22px;
+  margin-bottom: 31px;
+}
+
+.header__promo {
+  padding-left: 14.7%;
+  padding-right: 14.7%;
+  display: flex;
+  padding-bottom: 238px;
+}
+
+.header__desc {
+  flex-basis: 50%;
+  padding-right: 5%;
+}
+
+.header__slogan {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 139%;
+  letter-spacing: -0.005em;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.header__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.005em;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.header__form-container {
+  flex-basis: 50%;
+  padding-left: 12.7%;
+  padding-top: 6px;
+}
+
+.header__form-text {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 165%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  margin: 0;
+  margin-bottom: 19px;
+}

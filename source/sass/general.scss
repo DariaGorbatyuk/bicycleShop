@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+input, textarea, select, button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:not([href]){
+  cursor: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
+
+ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}

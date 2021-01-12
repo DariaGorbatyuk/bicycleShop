@@ -1,0 +1,31 @@
+.form__item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form__inp {
+  background: $white;
+  border: 1px solid $gray-border;
+  border-radius: 4px;
+  @include size(327px, 48px);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba($gray-placeholder, 0.5);
+  }
+}
+
+.form__btn {
+  border: 0;
+  background-color: $blue;
+  color: $black;
+  border-radius: 6px;
+  padding: 16px 52px 15px 53px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+}
