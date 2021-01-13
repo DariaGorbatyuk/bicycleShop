@@ -15,8 +15,7 @@
   border: 1px solid $gray-border;
   border-radius: 4px;
   @include size(327px, 48px);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 12px 30px 12px;
 
   &::placeholder {
     font-weight: normal;

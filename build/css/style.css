@@ -445,8 +445,7 @@ ul {
   border-radius: 4px;
   width: 327px;
   height: 48px;
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding: 12px 30px 12px; }
   .form__inp::-webkit-input-placeholder {
     font-weight: normal;
     font-size: 15px;
