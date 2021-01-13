@@ -111,6 +111,9 @@ ul {
     .container {
       width: 100%;
       padding: 0 21px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 16px; } }
 
 .header {
   color: #ffffff;
@@ -255,6 +258,20 @@ ul {
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .header {
       background-image: url("../img/bike-tabl.jpg"); } }
+  @media (max-width: 767px) {
+    .header {
+      background-image: url("../../img/bike-mob.jpg");
+      background-size: 100% 390px; }
+      .header--no-js .header__desc {
+        padding-top: 121px;
+        padding-bottom: 70px; }
+      .header--no-js .header__text {
+        padding: 0 25px; }
+      .header--no-js .header__form-container {
+        padding: 69px 15px 0; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .header {
+      background-image: url("../img/bike-mob2x.jpg"); } }
 
 .header__logo {
   display: block;
@@ -264,6 +281,9 @@ ul {
   @media (max-width: 1023px) {
     .header__logo {
       margin-bottom: 89px; } }
+  @media (max-width: 767px) {
+    .header__logo {
+      margin-bottom: 74px; } }
 
 .header__promo {
   padding-left: 14.7%;
@@ -289,7 +309,10 @@ ul {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       padding: 0;
-      padding-bottom: 118px; } }
+      padding-bottom: 82px; } }
+  @media (max-width: 767px) {
+    .header__desc {
+      padding-bottom: 24.3%; } }
 
 .header__slogan {
   font-weight: bold;
@@ -304,6 +327,9 @@ ul {
       line-height: 42px;
       text-align: center;
       margin-bottom: 18px; } }
+  @media (max-width: 767px) {
+    .header__slogan {
+      margin-bottom: 20px; } }
 
 .header__text {
   font-weight: 300;
@@ -318,6 +344,9 @@ ul {
       line-height: 178%;
       text-align: center;
       padding: 0 172px; } }
+  @media (max-width: 767px) {
+    .header__text {
+      padding: 0; } }
 
 .header__form-container {
   -ms-flex-preferred-size: 50%;
@@ -328,7 +357,10 @@ ul {
     .header__form-container {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      padding: 34px 202px 0; } }
+      padding: 70px 202px 0; } }
+  @media (max-width: 767px) {
+    .header__form-container {
+      padding: 70px 0 0; } }
 
 .header__form-text {
   font-weight: 600;
@@ -347,6 +379,9 @@ ul {
       color: #000000;
       padding-top: 0;
       margin-bottom: 29px; } }
+  @media (max-width: 767px) {
+    .header__form-text {
+      margin-bottom: 20px; } }
 
 .logo {
   fill: #0AD9C6; }
@@ -394,6 +429,15 @@ ul {
 .form__item {
   display: block;
   margin-bottom: 20px; }
+  @media (max-width: 1023px) {
+    .form__item {
+      margin: 0 auto 20px;
+      width: 321px;
+      height: 48px; } }
+  @media (max-width: 767px) {
+    .form__item {
+      width: 288px;
+      height: 48px; } }
 
 .form__inp {
   background: #ffffff;
@@ -434,6 +478,11 @@ ul {
       height: 48px;
       padding-left: 20px;
       padding-right: 20px; } }
+  @media (max-width: 767px) {
+    .form__inp {
+      width: 288px;
+      height: 48px;
+      padding-left: 24px; } }
 
 .form__btn {
   border: 0;
@@ -443,7 +492,12 @@ ul {
   padding: 16px 52px 15px 53px;
   font-weight: 600;
   font-size: 15px;
-  line-height: 21px; }
+  line-height: 21px;
+  display: block;
+  margin: auto; }
   @media (max-width: 1023px) {
     .form__btn {
       padding: 16px 49px 15px; } }
+  @media (max-width: 767px) {
+    .form__btn {
+      padding: 13px 32px 15px; } }

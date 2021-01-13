@@ -1,6 +1,13 @@
 .form__item {
   display: block;
   margin-bottom: 20px;
+  @media (max-width: $m-end) {
+    margin: 0 auto 20px;
+    @include size(321px, 48px);
+  }
+  @media (max-width: $s-end) {
+    @include size(288px, 48px);
+  }
 }
 
 .form__inp {
@@ -23,6 +30,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  @media (max-width: $s-end) {
+    @include size(288px, 48px);
+    padding-left: 24px;
+  }
 }
 
 .form__btn {
@@ -34,7 +45,12 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+  display: block;
+  margin: auto;
   @media (max-width: $m-end) {
     padding: 16px 49px 15px;
+  }
+  @media (max-width: $s-end) {
+    padding: 13px 32px 15px;
   }
 }

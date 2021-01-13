@@ -115,6 +115,7 @@
         flex-direction: column;
         padding: 0;
       }
+
       .menu {
         width: 100%;
         padding: 0;
@@ -170,6 +171,28 @@
       background-image: url("../img/bike-tabl.jpg");
     }
   }
+
+  @media (max-width: $s-end) {
+    background-image: url("../../img/bike-mob.jpg");
+    background-size: 100% 390px;
+    &--no-js {
+      .header__desc {
+        padding-top: 121px;
+        padding-bottom: 70px;
+      }
+
+      .header__text {
+        padding: 0 25px;
+      }
+
+      .header__form-container {
+        padding: 69px 15px 0;
+      }
+    }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike-mob2x.jpg");
+    }
+  }
 }
 
 
@@ -181,6 +204,9 @@
 
   @media (max-width: $m-end) {
     margin-bottom: 89px;
+  }
+  @media (max-width: $s-end) {
+    margin-bottom: 74px;
   }
 }
 
@@ -203,7 +229,10 @@
   @media (max-width: $m-end) {
     flex-basis: 100%;
     padding: 0;
-    padding-bottom: 118px;
+    padding-bottom: 82px;
+  }
+  @media (max-width: $s-end) {
+    padding-bottom: 24.3%;
   }
 }
 
@@ -221,6 +250,9 @@
     text-align: center;
     margin-bottom: 18px;
   }
+  @media (max-width: $s-end) {
+    margin-bottom: 20px;
+  }
 }
 
 .header__text {
@@ -237,6 +269,9 @@
     text-align: center;
     padding: 0 172px;
   }
+  @media (max-width: $s-end) {
+    padding: 0;
+  }
 }
 
 .header__form-container {
@@ -246,9 +281,13 @@
 
   @media (max-width: $m-end) {
     flex-basis: 100%;
-    padding: 34px 202px 0;
+    padding: 70px 202px 0;
+  }
+  @media (max-width: $s-end) {
+    padding: 70px 0 0;
   }
 }
+
 
 .header__form-text {
   font-weight: 600;
@@ -267,5 +306,8 @@
     color: $black;
     padding-top: 0;
     margin-bottom: 29px;
+  }
+  @media (max-width: $s-end) {
+    margin-bottom: 20px;
   }
 }
