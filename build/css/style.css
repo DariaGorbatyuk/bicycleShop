@@ -578,7 +578,9 @@ ul {
 .social__item {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  min-width: 283px; }
+  margin-bottom: 5px; }
+  .social__item:last-child {
+    margin-bottom: 0; }
   @media (max-width: 767px) {
     .social__item {
       margin-bottom: 21px; } }

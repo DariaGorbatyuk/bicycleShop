@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 27.3%;
+
   @media (max-width: $m-end) {
     padding: 0 80px;
   }
@@ -13,7 +14,11 @@
 
 .social__item {
   flex-basis: 50%;
-  min-width: 283px;
+  margin-bottom: 5px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 
   @media (max-width: $s-end) {
     margin-bottom: 21px;
