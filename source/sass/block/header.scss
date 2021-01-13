@@ -11,31 +11,46 @@
     background-image: url("../img/bike-desk2x.jpg");
   }
 
-
   @media (max-width: $m-end) {
     background-image: url("../img/bike-tabl.jpg");
     background-size: 100% 341px;
     background-color: $white;
     padding-bottom: 30px;
 
+    &--no-js {
+      background-image: none;
 
-    &--opened {
-      padding-top: 0;
-
-      .menu {
-        position: absolute;
-        width: 100%;
+      .container {
         padding: 0;
-        left: 0;
-        padding-top: 100px;
-        background-color: $white;
-        padding-bottom: 137px;
-        z-index: 1;
       }
 
-      .menu__list {
-        flex-direction: column;
-        padding: 0;
+      .header__form-container {
+        padding: 70px 224px 0;
+      }
+
+      .header__desc {
+        background-image: url("../img/bike-tabl.jpg");
+        background-size: cover;
+        padding-top: 134px;
+        padding-bottom: 82px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/bike-desk2x.jpg");
+        }
+      }
+
+      .header__logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    &--opened {
+      .menu {
+        position: absolute;
+        left: 0;
+        z-index: 1;
       }
 
       .close {
@@ -59,13 +74,10 @@
           transform: rotate(-45deg);
         }
       }
-
-      .menu__link {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 140%;
-        color: $gray-menu-text;
-      }
+    }
+    &--no-js,
+    &--opened {
+      padding-top: 0;
 
       .menu__item {
         width: 100%;
@@ -91,6 +103,27 @@
       .menu__item:last-child {
         margin-bottom: 0;
       }
+
+      .menu__link {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: $gray-menu-text;
+      }
+
+      .menu__list {
+        flex-direction: column;
+        padding: 0;
+      }
+      .menu {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: $white;
+        padding-top: 100px;
+        padding-bottom: 137px;
+      }
+
     }
     &--closed {
       padding-top: 24px;
