@@ -12,4 +12,10 @@
   @media (max-width: $s-end){
     padding: 0 16px;
   }
+
+  &--footer{
+    @media (max-width: $s-end){
+      padding: 0
+    }
+  }
 }
