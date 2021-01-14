@@ -1,14 +1,13 @@
 .types {
   background-color: $gray-backgound;
   padding-top: 150px;
-  padding-bottom: 148px;
+  padding-bottom: 151px;
   @media (max-width: $m-end) {
     padding-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   @media (max-width: $s-end){
-    padding-top: 50px;
-
+    padding-top: 48px;
   }
 }
 
@@ -25,9 +24,6 @@
     font-size: 24px;
     line-height: 41px;
     margin-bottom: 30px;
-  }
-  @media (max-width: $s-end){
-
   }
 }
 
@@ -157,9 +153,9 @@
 }
 
 .types__img {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   @media (max-width: $s-end){
-
+    margin-bottom: 20px;
   }
 }
 

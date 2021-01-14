@@ -19,7 +19,7 @@
         <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
         <li class="menu__item"><a class="menu__link" href="#types">Виды велосипедов</a></li>
         <li class="menu__item"><a class="menu__link" href="#video">Видео про велосипеды</a></li>
-        <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+        <li class="menu__item"><a class="menu__link" href="#footer">Контакты</a></li>
       </ul>
     </nav>
     <div class="header__promo">
@@ -68,7 +68,7 @@
       <ul class="types__list">
         <li class="types__item">
           <picture>
-          <source media="(max-width: 1023px)" srcset="./img/road.jpg 1x, ./img/road2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="./img/road.jpg 1x, ./img/road2x.jpg 2x">
             <img src="./img/road-desk.jpg" srcset="./img/road-desk2x.jpg 2x"
                  alt="Легкий городской велосипед с корзинкой спереди у кирпичной стены"
                  class="types__img"
@@ -78,7 +78,7 @@
         </li>
         <li class="types__item">
           <picture>
-          <source media="(max-width: 1023px)" srcset="./img/mount.jpg 1x, ./img/mount2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="./img/mount.jpg 1x, ./img/mount2x.jpg 2x">
             <img src="./img/mount-desk.jpg" srcset="./img/mount-desk2x.jpg 2x"
                  alt="Черный велосипед с крупными шинами на склоне"
                  class="types__img"
@@ -88,7 +88,7 @@
         </li>
         <li class="types__item">
           <picture>
-          <source media="(max-width: 1023px)" srcset="./img/children.jpg 1x, ./img/children2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="./img/children.jpg 1x, ./img/children2x.jpg 2x">
             <img src="./img/children-desk.jpg" srcset="./img/children-desk2x.jpg 2x"
                  alt="Маленький розовый двухколесный велосипед с корзинкой"
                  class="types__img"
@@ -99,8 +99,29 @@
       </ul>
     </div>
   </section>
+  <section id="video" class="page__video video">
+    <div class="container">
+      <div class="video__desc ">
+        <h2 class="video__heading">Видео про велосипеды</h2>
+        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      </div>
+      <div class="video__box">
+        <a href="#" class="video__link">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/video-mob.jpg, ./img/video-mob2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="./img/video-tabl.jpg 1x, ./img/video-tabl2x.jpg 2x">
+            <img src="./img/video-desk.jpg" srcset="./img/video-desk2x.jpg 2x"
+                 alt="Видео о выборе велосипеда"
+                 class="video__img"
+                 sizes="(max-width: 767px) 288px,(max-width: 1023px) 503px, 929px">
+          </picture>
+        </a>
+        <button type="button" class="video__btn" aria-label="Включить видео"></button>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="page__footer footer">
+<footer id="footer" class="page__footer footer">
   <div class="container container--footer">
     <h2 class="footer__heading">Как нас найти?</h2>
     <address class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
