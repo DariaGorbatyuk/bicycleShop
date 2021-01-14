@@ -515,7 +515,7 @@ ul {
       padding-bottom: 29px; } }
   @media (max-width: 767px) {
     .about {
-      padding-top: 42px; } }
+      padding-bottom: 50px; } }
 
 .about__heading {
   font-style: normal;
@@ -599,6 +599,13 @@ ul {
   background-color: #F6F7F9;
   padding-top: 150px;
   padding-bottom: 148px; }
+  @media (max-width: 1023px) {
+    .types {
+      padding-top: 48px;
+      padding-bottom: 20px; } }
+  @media (max-width: 767px) {
+    .types {
+      padding-top: 50px; } }
 
 .types__heading {
   font-weight: 600;
@@ -609,6 +616,11 @@ ul {
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px; }
+  @media (max-width: 1023px) {
+    .types__heading {
+      font-size: 24px;
+      line-height: 41px;
+      margin-bottom: 30px; } }
 
 .types__list {
   display: -webkit-box;
@@ -620,6 +632,14 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 1023px) {
+    .types__list {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 0 6.2%; } }
+  @media (max-width: 767px) {
+    .types__list {
+      padding: 0; } }
 
 .types__item {
   border-radius: 10px;
@@ -674,6 +694,39 @@ ul {
       border: 17px solid #0AD9C6;
       right: -36px;
       top: -32px; }
+  @media (max-width: 1023px) {
+    .types__item {
+      -ms-flex-preferred-size: 270px;
+          flex-basis: 270px;
+      margin-right: 0;
+      margin-bottom: 50px; }
+      .types__item:first-child {
+        margin-top: 0; }
+        .types__item:first-child::before {
+          width: 127px;
+          height: 127px;
+          border: 18px solid #0AD9C6;
+          bottom: 27px;
+          left: -38px;
+          top: auto; }
+      .types__item:nth-child(2n) {
+        margin-top: 0; }
+        .types__item:nth-child(2n)::before, .types__item:nth-child(2n)::after {
+          display: none; }
+      .types__item:last-child::before {
+        width: 68px;
+        height: 68px;
+        border: 13px solid #0AD9C6;
+        right: -25px;
+        top: -20px; } }
+  @media (max-width: 767px) {
+    .types__item {
+      margin-bottom: 42px; }
+      .types__item:first-child::before {
+        bottom: 25px;
+        left: -23px; }
+      .types__item:last-child::before {
+        right: -15px; } }
 
 .types__img {
   margin-bottom: 20px; }
