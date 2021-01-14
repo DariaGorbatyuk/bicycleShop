@@ -15,7 +15,7 @@
   flex-basis: 50%;
   margin-bottom: 5px;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 
@@ -38,6 +38,15 @@
   &--tel {
     padding-left: 80px;
     justify-content: flex-start;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    outline: none;
+  }
+  &:active{
+    opacity: 0.6;
   }
 
   @media (max-width: $s-end) {

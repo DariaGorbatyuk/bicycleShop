@@ -24,6 +24,15 @@
     color: rgba($gray-placeholder, 0.5);
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: inset 2px 0 0 $blue,
+    inset 0 2px 0 $blue,
+    inset -2px 0 0 $blue,
+    inset 0 -2px 0 $blue;
+  }
+
   @media (max-width: $m-end) {
     @include size(321px, 48px);
     padding-left: 20px;
@@ -46,6 +55,17 @@
   line-height: 21px;
   display: block;
   margin: auto;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $light-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+
   @media (max-width: $m-end) {
     padding: 16px 49px 15px;
   }
