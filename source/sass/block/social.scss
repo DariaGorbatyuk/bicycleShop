@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 27.3%;
 
   @media (max-width: $m-end) {
     padding: 0 80px;
@@ -22,6 +21,7 @@
 
   @media (max-width: $s-end) {
     margin-bottom: 21px;
+    flex-basis: 100%;
   }
 }
 
@@ -31,16 +31,14 @@
   font-size: 16px;
   line-height: 22px;
   color: rgba($black, 0.5);
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-right: 10px;
 
-  @media (max-width: $m-end) {
-    &--tel {
-      padding-left: 80px;
-    }
+  &--tel {
+    padding-left: 80px;
+    justify-content: flex-start;
   }
-
 
   @media (max-width: $s-end) {
     padding-right: 0;
