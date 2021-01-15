@@ -6,7 +6,7 @@
     padding-top: 48px;
     padding-bottom: 15px;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     padding-top: 48px;
   }
 }
@@ -36,7 +36,7 @@
     justify-content: space-around;
     padding: 0 6.2%;
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     padding: 0;
   }
 }
@@ -110,6 +110,7 @@
 
     &:first-child {
       margin-top: 0;
+
       &::before {
         @include square(127px);
         border: 18px solid $blue;
@@ -126,7 +127,7 @@
         display: none;
       }
     }
-    &:last-child{
+    &:last-child {
       &::before {
         @include square(68px);
         border: 13px solid $blue;
@@ -135,28 +136,39 @@
       }
     }
   }
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
     margin-bottom: 42px;
 
-    &:first-child{
-      &::before{
+    &:first-child {
+      &::before {
         bottom: 25px;
         left: -23px;
       }
     }
-    &:last-child{
-      &::before{
+    &:last-child {
+      &::before {
         right: -15px;
       }
     }
   }
 }
 
-.types__img {
+.types__img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
   margin-bottom: 23px;
-  @media (max-width: $s-end){
+
+  @media (max-width: $m-end) {
+    @include size(270px, 300px);
+  }
+  @media (max-width: $s-end) {
     margin-bottom: 20px;
   }
+}
+
+.types__img {
+  object-fit: cover;
 }
 
 .types__desc {
@@ -167,7 +179,7 @@
   letter-spacing: -0.5px;
   color: $black;
   display: block;
-  @media (max-width: $s-end){
+  @media (max-width: $s-end) {
 
   }
 }

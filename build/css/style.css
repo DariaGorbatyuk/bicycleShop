@@ -734,11 +734,22 @@ ul {
       .types__item:last-child::before {
         right: -15px; } }
 
-.types__img {
+.types__img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
   margin-bottom: 23px; }
+  @media (max-width: 1023px) {
+    .types__img-wrapper {
+      width: 270px;
+      height: 300px; } }
   @media (max-width: 767px) {
-    .types__img {
+    .types__img-wrapper {
       margin-bottom: 20px; } }
+
+.types__img {
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .types__desc {
   font-weight: 600;
