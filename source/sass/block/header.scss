@@ -54,12 +54,7 @@
       }
 
       .close {
-        @include pseudo();
-        @include size(50px, 51px);
-        top: 0;
-        right: 0;
-        z-index: 1;
-        border: 0;
+        display: block;
         background-color: $white;
 
         &:before,
@@ -139,32 +134,11 @@
 
       .close {
         display: block;
-        @include pseudo();
-        @include square(50px);
-        top: 0;
-        right: 0;
         background-color: $blue;
-        border: 0;
       }
 
       .close__line {
         display: block;
-        position: absolute;
-        @include size(21px, 1px);
-        background-color: $black;
-        left: 15px;
-
-        &:before,
-        &:after {
-          @include pseudo();
-          @include size(21px, 1px);
-          background-color: $black;
-          top: 6px;
-        }
-
-        &:before {
-          top: -7px;
-        }
       }
     }
     @media (min-resolution: 2dppx) {

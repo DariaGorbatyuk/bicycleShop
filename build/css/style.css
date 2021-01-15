@@ -62,10 +62,34 @@ ul {
   padding: 0; }
 
 .close {
-  display: none; }
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border: 0; }
+  .close:hover, .close:focus {
+    outline: none; }
 
 .close__line {
-  display: none; }
+  display: none;
+  position: absolute;
+  width: 21px;
+  height: 1px;
+  background-color: #000000;
+  left: 15px; }
+  .close__line:before, .close__line:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 1px;
+    background-color: #000000;
+    top: 6px; }
+  .close__line:before {
+    top: -7px; }
 
 .visually-hidden {
   position: absolute;
@@ -159,15 +183,7 @@ ul {
         left: 0;
         z-index: 1; }
       .header--opened .close {
-        content: "";
         display: block;
-        position: absolute;
-        width: 50px;
-        height: 51px;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        border: 0;
         background-color: #ffffff; }
         .header--opened .close:before, .header--opened .close:after {
           content: "";
@@ -232,32 +248,9 @@ ul {
           display: none; }
         .header--closed .close {
           display: block;
-          content: "";
-          display: block;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: 0;
-          right: 0;
-          background-color: #0AD9C6;
-          border: 0; }
+          background-color: #0AD9C6; }
         .header--closed .close__line {
-          display: block;
-          position: absolute;
-          width: 21px;
-          height: 1px;
-          background-color: #000000;
-          left: 15px; }
-          .header--closed .close__line:before, .header--closed .close__line:after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 21px;
-            height: 1px;
-            background-color: #000000;
-            top: 6px; }
-          .header--closed .close__line:before {
-            top: -7px; } }
+          display: block; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .header {
       background-image: url("../img/bike-tabl.jpg"); } }
