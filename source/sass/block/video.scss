@@ -65,7 +65,14 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: fit-content;
+  @include size(929px, 522px);
+
+  @media (max-width: $m-end) {
+    @include size(503px, 282px);
+  }
+  @media (max-width: $s-end) {
+    @include size(288px, 162px);
+  }
 }
 
 .video__link {
@@ -87,6 +94,15 @@
 
 .video__img {
   margin: 0 auto;
+  object-fit: cover;
+  @include size(929px, 522px);
+
+  @media (max-width: $m-end) {
+    @include size(503px, 282px);
+  }
+  @media (max-width: $s-end) {
+    @include size(288px, 162px);
+  }
 }
 
 .video__btn {

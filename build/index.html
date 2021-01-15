@@ -117,9 +117,11 @@
       <div class="video__box">
         <a href="#" class="video__link">
           <picture>
-            <source media="(max-width: 767px)" srcset="./img/video-mob.jpg, ./img/video-mob2x.jpg 2x">
-            <source media="(max-width: 1023px)" srcset="./img/video-tabl.jpg 1x, ./img/video-tabl2x.jpg 2x">
-            <img src="./img/video-desk.jpg" srcset="./img/video-desk2x.jpg 2x" alt="Видео о выборе велосипеда" class="video__img">
+            <source media="(max-width: 767px)" srcset="./img/video-mob.webp, ./img/video-mob2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/video-tabl.webp 1x, ./img/video-tabl2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="./img/video-desk.webp 1x, ./img/video-desk2x.webp 2x">
+            <img src="./img/video-desk.jpg" srcset="./img/video-desk.jpg 929px,
+                         ./img/video-desk2x.jpg 1858px" sizes="(max-width: 767px) 288px,(max-width: 1023px) 503px, 929px" alt="Видео о выборе велосипеда" class="video__img">
           </picture>
         </a>
         <button type="button" class="video__btn" aria-label="Включить видео"></button>
