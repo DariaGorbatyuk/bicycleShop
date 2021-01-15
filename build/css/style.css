@@ -180,6 +180,7 @@ ul {
           left: 10px; }
       .header--opened .menu {
         position: absolute;
+        height: 100vh;
         left: 0;
         z-index: 1; }
       .header--opened .close {
