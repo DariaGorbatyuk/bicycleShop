@@ -51,6 +51,7 @@
 .footer__map-container {
   @include size(957px, 530px);
   margin: 0 auto 40px;
+  position: relative;
 
   @media (max-width: $m-end) {
     @include size(698px, 545px);
@@ -73,4 +74,11 @@
     @include size(100%, 250px);
     width: 100%;
   }
+}
+.footer__map{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
