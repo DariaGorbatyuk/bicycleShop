@@ -53,11 +53,6 @@ button {
 svg {
   fill: currentColor; }
 
-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0; }
-
 .close {
   display: none;
   position: absolute;
@@ -385,6 +380,8 @@ ul {
   margin-bottom: 254px; }
 
 .menu__list {
+  margin: 0;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,10 +390,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 2%;
-  padding-right: 2.5%;
   position: relative;
-  padding-bottom: 9px; }
+  padding: 0 2.5% 9px 2%; }
   .menu__list::after {
     content: "";
     display: block;
@@ -541,6 +536,9 @@ ul {
       font-size: 24px; } }
 
 .about__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,6 +624,8 @@ ul {
       margin-bottom: 30px; } }
 
 .types__list {
+  margin: 0;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,6 +976,9 @@ ul {
       width: 100%; } }
 
 .social {
+  margin: 0;
+  list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

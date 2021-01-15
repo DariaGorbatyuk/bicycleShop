@@ -4,13 +4,14 @@
 }
 
 .menu__list {
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 2%;
-  padding-right: 2.5%;
   position: relative;
-  padding-bottom: 9px;
+  padding: 0 2.5% 9px 2%;
+
 
   &::after {
     @include pseudo();
