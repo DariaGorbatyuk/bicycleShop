@@ -434,50 +434,50 @@ svg {
       width: 288px;
       height: 48px; } }
 
-.form__inp {
+.form input {
   background: #ffffff;
   border: 1px solid #C9CCD4;
   border-radius: 4px;
   width: 327px;
   height: 48px;
   padding: 12px 30px 12px; }
-  .form__inp::-webkit-input-placeholder {
+  .form input::-webkit-input-placeholder {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
-  .form__inp::-moz-placeholder {
+  .form input::-moz-placeholder {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
-  .form__inp:-ms-input-placeholder {
+  .form input:-ms-input-placeholder {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
-  .form__inp::-ms-input-placeholder {
+  .form input::-ms-input-placeholder {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
-  .form__inp::placeholder {
+  .form input::placeholder {
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
     color: rgba(28, 28, 28, 0.5); }
-  .form__inp:hover, .form__inp:focus {
+  .form input:hover, .form input:focus {
     outline: none;
     -webkit-box-shadow: inset 2px 0 0 #0AD9C6, inset 0 2px 0 #0AD9C6, inset -2px 0 0 #0AD9C6, inset 0 -2px 0 #0AD9C6;
             box-shadow: inset 2px 0 0 #0AD9C6, inset 0 2px 0 #0AD9C6, inset -2px 0 0 #0AD9C6, inset 0 -2px 0 #0AD9C6; }
   @media (max-width: 1023px) {
-    .form__inp {
+    .form input {
       width: 321px;
       height: 48px;
       padding-left: 20px;
       padding-right: 20px; } }
   @media (max-width: 767px) {
-    .form__inp {
+    .form input {
       width: 288px;
       height: 48px;
       padding-left: 24px; } }
