@@ -11,7 +11,7 @@
   }
 }
 
-.types__heading {
+.types h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -27,7 +27,7 @@
   }
 }
 
-.types__list {
+.types ul {
   margin: 0;
   list-style: none;
   display: flex;
@@ -43,7 +43,7 @@
   }
 }
 
-.types__item {
+.types li {
   border-radius: 10px;
   flex: 0 0 30%;
   min-width: 237px;
@@ -169,11 +169,11 @@
   }
 }
 
-.types__img {
+.types img {
   object-fit: cover;
 }
 
-.types__desc {
+.types span {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
@@ -181,7 +181,4 @@
   letter-spacing: -0.5px;
   color: $black;
   display: block;
-  @media (max-width: $s-end) {
-
-  }
 }
