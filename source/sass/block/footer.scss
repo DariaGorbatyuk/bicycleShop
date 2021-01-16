@@ -9,7 +9,7 @@
   }
 }
 
-.footer__heading {
+.footer h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -29,7 +29,7 @@
   }
 }
 
-.footer__text {
+.footer address {
   font-weight: normal;
   font-style: normal;
   font-size: 17px;
@@ -63,7 +63,7 @@
   }
 }
 
-.footer__map-img {
+.footer img {
   @include size(957px, 530px);
   object-fit: cover;
 
