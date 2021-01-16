@@ -25,7 +25,7 @@
   }
 }
 
-.video__heading {
+.video h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -40,7 +40,7 @@
   }
 }
 
-.video__text {
+.video p {
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
@@ -75,24 +75,24 @@
   }
 }
 
-.video__link {
+.video a {
   &:focus {
     outline: none;
   }
 
-  &:hover ~ .video__btn,
-  &:focus ~ .video__btn {
+  &:hover ~ button,
+  &:focus ~ button {
     outline: none;
     transform: translate(-50%, -50%) scale(1.2);
   }
 
-  &:active ~ .video__btn {
+  &:active ~ button {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.6;
   }
 }
 
-.video__img {
+.video img {
   margin: 0 auto;
   object-fit: cover;
   @include size(929px, 522px);
@@ -105,7 +105,7 @@
   }
 }
 
-.video__btn {
+.video button {
   position: absolute;
   left: 50%;
   @include square(65px);
@@ -123,6 +123,16 @@
     @include size(13px, 18px);
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.6;
   }
 
   @media (max-width: $m-end) {
