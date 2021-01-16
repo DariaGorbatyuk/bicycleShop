@@ -147,9 +147,10 @@ svg {
       background-image: url("../img/bike-desk2x.jpg"); } }
   @media (max-width: 1023px) {
     .header {
-      background-image: url("../img/bike-tabl.jpg");
       background-size: 100% 341px;
       background-color: #ffffff;
+      background-image: url("../img/bike-tabl.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+      background-image: url("../img/bike-tabl.jpg"), linear-gradient(#171717);
       padding-bottom: 30px; }
       .header--no-js {
         background-image: none; }
@@ -158,13 +159,15 @@ svg {
         .header--no-js .header__form-container {
           padding: 70px 224px 0; }
         .header--no-js .header__desc {
-          background-image: url("../img/bike-tabl.jpg");
+          background-image: url("../img/bike-tabl.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+          background-image: url("../img/bike-tabl.jpg"), linear-gradient(#171717);
           background-size: cover;
           padding-top: 134px;
           padding-bottom: 82px; } }
       @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
         .header--no-js .header__desc {
-          background-image: url("../img/bike-desk2x.jpg"); } }
+          background-image: url("../img/bike-tabl2x.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+          background-image: url("../img/bike-tabl2x.jpg"), linear-gradient(#171717); } }
   @media (max-width: 1023px) {
         .header--no-js .header__logo {
           position: absolute;
@@ -246,10 +249,12 @@ svg {
           display: block; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/bike-tabl.jpg"); } }
+      background-image: url("../img/bike-tabl2x.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+      background-image: url("../img/bike-tabl2x.jpg"), linear-gradient(#171717); } }
   @media (max-width: 767px) {
     .header {
-      background-image: url("../../img/bike-mob.jpg");
+      background-image: url("../img/bike-mob.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+      background-image: url("../img/bike-mob.jpg"), linear-gradient(#171717);
       background-size: 100% 390px; }
       .header--no-js .header__desc {
         padding-top: 121px;
@@ -260,7 +265,8 @@ svg {
         padding: 69px 15px 0; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/bike-mob2x.jpg"); } }
+      background-image: url("../img/bike-mob2x.jpg"), -webkit-gradient(linear, left top, left bottom, from(#171717));
+      background-image: url("../img/bike-mob2x.jpg"), linear-gradient(#171717); } }
 
 .header__logo {
   display: block;
