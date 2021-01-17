@@ -1,5 +1,3 @@
-'use strict';
-(()=>{
   const pageHeader = document.querySelector('.header');
   const headerToggle = document.querySelector('.menu__toggle');
   const body = document.querySelector('.page__body')
@@ -18,5 +16,4 @@
       body.style = 'overflow: visible'
     }
   });
-})()
 

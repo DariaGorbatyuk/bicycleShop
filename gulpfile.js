@@ -16,6 +16,7 @@ const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 const del = require('del');
 const cheerio = require('gulp-cheerio');
+const concat = require('gulp-concat');
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -96,7 +97,6 @@ gulp.task('copy', function () {
   return gulp.src([
     'source/font/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**',
     'source//*.ico'
   ], {
     base: 'source'
@@ -108,6 +108,11 @@ gulp.task('clean', function () {
   return del('build');
 });
 
+gulp.task('scripts', function() {
+  return gulp.src(['source/js/map.js','source/js/script.js'])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'));
+});
 
-gulp.task('build', gulp.series('clean', 'copy', 'images', 'webp', 'css', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy','scripts', 'images', 'webp', 'css', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));
