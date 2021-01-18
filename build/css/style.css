@@ -36,7 +36,10 @@ img {
   max-width: 100%;
   display: block; }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font: inherit; }
 
 a {
@@ -72,7 +75,7 @@ svg {
   height: 1px;
   background-color: #000000;
   left: 15px; }
-  .close__line:before, .close__line:after {
+  .close__line::before, .close__line::after {
     content: "";
     display: block;
     position: absolute;
@@ -80,7 +83,7 @@ svg {
     height: 1px;
     background-color: #000000;
     top: 6px; }
-  .close__line:before {
+  .close__line::before {
     top: -7px; }
 
 .visually-hidden {
@@ -181,7 +184,7 @@ svg {
       .header--opened .close {
         display: block;
         background-color: #ffffff; }
-        .header--opened .close:before, .header--opened .close:after {
+        .header--opened .close::before, .header--opened .close::after {
           content: "";
           display: block;
           position: absolute;
@@ -190,20 +193,20 @@ svg {
           width: 36px;
           height: 1px;
           background-color: rgba(20, 21, 23, 0.2); }
-        .header--opened .close:after {
+        .header--opened .close::after {
           -webkit-transform: rotate(-45deg);
                   transform: rotate(-45deg); }
       .header--no-js, .header--opened {
         padding-top: 0; }
         .header--no-js .menu__item, .header--opened .menu__item {
           width: 100%;
-          background-color: #F6F6F6;
+          background-color: #f6f6f6;
           max-width: 100%;
           padding: 17px;
           padding-right: 36px;
           margin-bottom: 28px;
           position: relative; }
-          .header--no-js .menu__item:after, .header--opened .menu__item:after {
+          .header--no-js .menu__item::after, .header--opened .menu__item::after {
             content: "";
             display: block;
             position: absolute;
@@ -222,7 +225,7 @@ svg {
           font-weight: normal;
           font-size: 20px;
           line-height: 140%;
-          color: #48494D; }
+          color: #48494d; }
         .header--no-js .menu__list, .header--opened .menu__list {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -244,7 +247,7 @@ svg {
           display: none; }
         .header--closed .close {
           display: block;
-          background-color: #0AD9C6; }
+          background-color: #0ad9c6; }
         .header--closed .close__line {
           display: block; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
@@ -379,7 +382,7 @@ svg {
       margin-bottom: 20px; } }
 
 .logo {
-  fill: #0AD9C6; }
+  fill: #0ad9c6; }
 
 .menu {
   padding: 0 15%;
@@ -442,7 +445,7 @@ svg {
 
 .form input {
   background: #ffffff;
-  border: 1px solid #C9CCD4;
+  border: 1px solid #c9ccd4;
   border-radius: 4px;
   width: 327px;
   height: 48px;
@@ -474,8 +477,8 @@ svg {
     color: rgba(28, 28, 28, 0.5); }
   .form input:hover, .form input:focus {
     outline: none;
-    -webkit-box-shadow: inset 2px 0 0 #0AD9C6, inset 0 2px 0 #0AD9C6, inset -2px 0 0 #0AD9C6, inset 0 -2px 0 #0AD9C6;
-            box-shadow: inset 2px 0 0 #0AD9C6, inset 0 2px 0 #0AD9C6, inset -2px 0 0 #0AD9C6, inset 0 -2px 0 #0AD9C6; }
+    -webkit-box-shadow: inset 2px 0 0 #0ad9c6, inset 0 2px 0 #0ad9c6, inset -2px 0 0 #0ad9c6, inset 0 -2px 0 #0ad9c6;
+            box-shadow: inset 2px 0 0 #0ad9c6, inset 0 2px 0 #0ad9c6, inset -2px 0 0 #0ad9c6, inset 0 -2px 0 #0ad9c6; }
   @media (max-width: 1023px) {
     .form input {
       width: 321px;
@@ -490,7 +493,7 @@ svg {
 
 .form__btn {
   border: 0;
-  background-color: #0AD9C6;
+  background-color: #0ad9c6;
   color: #000000;
   border-radius: 6px;
   padding: 16px 52px 15px 53px;
@@ -501,9 +504,9 @@ svg {
   margin: auto; }
   .form__btn:focus, .form__btn:hover {
     outline: none;
-    background-color: #50E3D5; }
+    background-color: #50e3d5; }
   .form__btn:active {
-    background-color: #09AB9B; }
+    background-color: #09ab9b; }
   @media (max-width: 1023px) {
     .form__btn {
       padding: 16px 49px 15px; } }
@@ -528,7 +531,7 @@ svg {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #1F1F1F;
+  color: #1f1f1f;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px; }
@@ -595,7 +598,7 @@ svg {
   font-weight: bold;
   font-size: 28px;
   line-height: 38px;
-  color: #0AD9C6;
+  color: #0ad9c6;
   letter-spacing: -1.27273px;
   padding-bottom: 16px; }
   @media (max-width: 767px) {
@@ -603,7 +606,7 @@ svg {
       padding-bottom: 14px; } }
 
 .types {
-  background-color: #F6F7F9;
+  background-color: #f6f7f9;
   padding-top: 150px;
   padding-bottom: 151px; }
   @media (max-width: 1023px) {
@@ -619,7 +622,7 @@ svg {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #1F1F1F;
+  color: #1f1f1f;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px; }
@@ -671,7 +674,7 @@ svg {
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 27px solid #0AD9C6;
+      border: 27px solid #0ad9c6;
       left: -60px;
       top: 155px;
       z-index: -1; }
@@ -680,7 +683,7 @@ svg {
     .types li:nth-child(2n)::before, .types li:nth-child(2n)::after {
       width: 47px;
       height: 47px;
-      border: 8px solid #0AD9C6;
+      border: 8px solid #0ad9c6;
       z-index: 1;
       left: -20px;
       top: -20px; }
@@ -700,7 +703,7 @@ svg {
       width: 95px;
       height: 95px;
       border-radius: 50%;
-      border: 17px solid #0AD9C6;
+      border: 17px solid #0ad9c6;
       right: -36px;
       top: -32px; }
   @media (max-width: 1023px) {
@@ -714,7 +717,7 @@ svg {
         .types li:first-child::before {
           width: 127px;
           height: 127px;
-          border: 18px solid #0AD9C6;
+          border: 18px solid #0ad9c6;
           bottom: 27px;
           left: -38px;
           top: auto; }
@@ -725,7 +728,7 @@ svg {
       .types li:last-child::before {
         width: 68px;
         height: 68px;
-        border: 13px solid #0AD9C6;
+        border: 13px solid #0ad9c6;
         right: -25px;
         top: -20px; } }
   @media (max-width: 767px) {
@@ -852,17 +855,7 @@ svg {
 .video img {
   margin: 0 auto;
   -o-object-fit: cover;
-     object-fit: cover;
-  width: 929px;
-  height: 522px; }
-  @media (max-width: 1023px) {
-    .video img {
-      width: 503px;
-      height: 282px; } }
-  @media (max-width: 767px) {
-    .video img {
-      width: 288px;
-      height: 162px; } }
+     object-fit: cover; }
 
 .video button {
   position: absolute;
@@ -870,7 +863,7 @@ svg {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-color: #0AD9C6;
+  background-color: #0ad9c6;
   border: 0;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -884,7 +877,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .video button:before {
+  .video button::before {
     content: "";
     display: block;
     position: static;
@@ -904,14 +897,14 @@ svg {
     .video button {
       width: 91px;
       height: 91px; }
-      .video button:before {
+      .video button::before {
         -webkit-transform: scale(1.4);
                 transform: scale(1.4); } }
   @media (max-width: 767px) {
     .video button {
       width: 65px;
       height: 65px; }
-      .video button:before {
+      .video button::before {
         -webkit-transform: scale(1);
                 transform: scale(1); } }
 
@@ -929,7 +922,7 @@ svg {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: #1F1F1F;
+  color: #1f1f1f;
   text-align: center;
   margin-bottom: 30px;
   margin-top: 0; }
@@ -976,19 +969,12 @@ svg {
       margin-bottom: 32px; } }
 
 .footer img {
-  width: 957px;
-  height: 530px;
   -o-object-fit: cover;
      object-fit: cover; }
-  @media (max-width: 1023px) {
-    .footer img {
-      width: 698px;
-      height: 545px; } }
   @media (max-width: 767px) {
     .footer img {
       width: 100%;
-      height: 250px;
-      width: 100%; } }
+      height: 250px; } }
 
 .footer__map {
   width: 100%;
@@ -1044,7 +1030,7 @@ svg {
   .social__link--tel {
     margin-left: 80px; }
   .social__link:hover, .social__link:focus {
-    color: #0AD9C6;
+    color: #0ad9c6;
     outline: none; }
   .social__link:active {
     opacity: 0.6; }
@@ -1058,6 +1044,6 @@ svg {
         margin-left: 0; } }
 
 .social__svg {
-  stroke: #0AD9C6;
+  stroke: #0ad9c6;
   fill: #ffffff;
   margin-right: 14px; }

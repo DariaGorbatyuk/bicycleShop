@@ -99,17 +99,8 @@
 }
 
 .video img {
-  @include size(929px, 522px);
   margin: 0 auto;
   object-fit: cover;
-
-  @media (max-width: $m-end) {
-    @include size(503px, 282px);
-  }
-
-  @media (max-width: $s-end) {
-    @include size(288px, 162px);
-  }
 }
 
 .video button {

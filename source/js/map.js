@@ -6,8 +6,6 @@
       }, {
         searchControlProvider: 'yandex#search'
       }),
-
-      // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
       ),
@@ -18,10 +16,7 @@
       }, {
         iconLayout: 'default#image',
         iconImageHref: 'img/fav32.png',
-        // Размеры метки.
         iconImageSize: [32, 32],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [-16, -16]
       });
 

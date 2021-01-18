@@ -47,4 +47,3 @@
       body.style = 'overflow: visible'
     }
   });
-

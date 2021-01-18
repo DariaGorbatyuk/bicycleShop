@@ -68,16 +68,10 @@
 }
 
 .footer img {
-  @include size(957px, 530px);
   object-fit: cover;
-
-  @media (max-width: $m-end) {
-    @include size(698px, 545px);
-  }
 
   @media (max-width: $s-end) {
     @include size(100%, 250px);
-    width: 100%;
   }
 }
 
