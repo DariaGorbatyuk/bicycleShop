@@ -52,7 +52,8 @@
 }
 
 .footer__map-container {
-  @include size(957px, 530px);
+  width: 76%;
+  height: 530px;
   margin: 0 auto 40px;
   position: relative;
 

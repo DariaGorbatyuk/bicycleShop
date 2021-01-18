@@ -435,9 +435,9 @@ svg {
   margin-bottom: 20px; }
   @media (max-width: 1023px) {
     .form__item {
-      margin: 0 auto 20px;
       width: 321px;
-      height: 48px; } }
+      height: 48px;
+      margin: 0 auto 20px; } }
   @media (max-width: 767px) {
     .form__item {
       width: 288px;
@@ -953,7 +953,7 @@ svg {
       padding: 0 34px; } }
 
 .footer__map-container {
-  width: 957px;
+  width: 76%;
   height: 530px;
   margin: 0 auto 40px;
   position: relative; }
