@@ -3,8 +3,8 @@
   margin-bottom: 20px;
 
   @media (max-width: $m-end) {
-    margin: 0 auto 20px;
     @include size(321px, 48px);
+    margin: 0 auto 20px;
   }
 
   @media (max-width: $s-end) {
@@ -31,9 +31,9 @@
   &:focus {
     outline: none;
     box-shadow: inset 2px 0 0 $blue,
-        inset 0 2px 0 $blue,
-        inset -2px 0 0 $blue,
-        inset 0 -2px 0 $blue;
+      inset 0 2px 0 $blue,
+      inset -2px 0 0 $blue,
+      inset 0 -2px 0 $blue;
   }
 
   @media (max-width: $m-end) {
