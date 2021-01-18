@@ -58,19 +58,20 @@
         display: block;
         background-color: $white;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
           @include pseudo();
           transform: rotate(45deg);
           @include size(36px, 1px);
           background-color: rgba($gray-close, 0.2);
         }
 
-        &:after {
+        &::after {
           transform: rotate(-45deg);
         }
       }
     }
+
     &--no-js,
     &--opened {
       padding-top: 0;
@@ -84,7 +85,7 @@
         margin-bottom: 28px;
         position: relative;
 
-        &:after {
+        &::after {
           @include pseudo();
           @include square(25px);
           background-image: url("../img/icon-arrow.svg");
@@ -120,8 +121,8 @@
         padding-top: 100px;
         padding-bottom: 137px;
       }
-
     }
+
     &--closed {
       padding-top: 24px;
 
@@ -142,6 +143,7 @@
         display: block;
       }
     }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bike-tabl2x.jpg"), linear-gradient($dark);
     }
@@ -150,6 +152,7 @@
   @media (max-width: $s-end) {
     background-image: url("../img/bike-mob.jpg"), linear-gradient($dark);
     background-size: 100% 390px;
+
     &--no-js {
       .header__desc {
         padding-top: 121px;
@@ -164,6 +167,7 @@
         padding: 69px 15px 0;
       }
     }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bike-mob2x.jpg"), linear-gradient($dark);
     }
@@ -180,6 +184,7 @@
   @media (max-width: $m-end) {
     margin-bottom: 89px;
   }
+
   @media (max-width: $s-end) {
     margin-bottom: 74px;
   }
@@ -206,6 +211,7 @@
     padding: 0;
     padding-bottom: 82px;
   }
+
   @media (max-width: $s-end) {
     padding-bottom: 24.3%;
   }
@@ -225,6 +231,7 @@
     text-align: center;
     margin-bottom: 18px;
   }
+
   @media (max-width: $s-end) {
     margin-bottom: 20px;
   }
@@ -244,6 +251,7 @@
     text-align: center;
     padding: 0 172px;
   }
+
   @media (max-width: $s-end) {
     padding: 0;
   }
@@ -258,6 +266,7 @@
     flex-basis: 100%;
     padding: 70px 202px 0;
   }
+
   @media (max-width: $s-end) {
     padding: 70px 0 0;
   }
@@ -282,6 +291,7 @@
     padding-top: 0;
     margin-bottom: 29px;
   }
+
   @media (max-width: $s-end) {
     margin-bottom: 20px;
   }

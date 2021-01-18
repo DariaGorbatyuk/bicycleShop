@@ -4,10 +4,12 @@
   background-color: $dark-background;
   background-clip: content-box;
   margin-bottom: 150px;
+
   @media (max-width: $m-end) {
     padding-bottom: 11%;
     margin-bottom: 70px;
   }
+
   @media (max-width: $s-end) {
     padding-bottom: 50px;
   }
@@ -20,6 +22,7 @@
   @media (max-width: $m-end) {
     padding-top: 70px;
   }
+
   @media (max-width: $s-end) {
     padding-top: 82px;
   }
@@ -54,6 +57,7 @@
   @media (max-width: $m-end) {
     padding: 0 20% 237px;
   }
+
   @media (max-width: $s-end) {
     padding: 0 0 165px;
   }
@@ -65,11 +69,13 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+
   @include size(929px, 522px);
 
   @media (max-width: $m-end) {
     @include size(503px, 282px);
   }
+
   @media (max-width: $s-end) {
     @include size(288px, 162px);
   }
@@ -93,13 +99,14 @@
 }
 
 .video img {
+  @include size(929px, 522px);
   margin: 0 auto;
   object-fit: cover;
-  @include size(929px, 522px);
 
   @media (max-width: $m-end) {
     @include size(503px, 282px);
   }
+
   @media (max-width: $s-end) {
     @include size(288px, 162px);
   }
@@ -108,6 +115,7 @@
 .video button {
   position: absolute;
   left: 50%;
+
   @include square(65px);
   border-radius: 50%;
   background-color: $blue;
@@ -118,12 +126,13 @@
   justify-content: center;
   align-items: center;
 
-  &:before {
+  &::before {
     @include pseudo($pos: static);
     @include size(13px, 18px);
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
   }
+
   &:hover,
   &:focus {
     outline: none;
@@ -137,14 +146,16 @@
 
   @media (max-width: $m-end) {
     @include square(91px);
-    &:before {
+
+    &::before {
       transform: scale(1.4);
     }
   }
 
   @media (max-width: $s-end) {
     @include square(65px);
-    &:before {
+
+    &::before {
       transform: scale(1);
     }
   }

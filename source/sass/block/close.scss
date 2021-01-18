@@ -1,6 +1,7 @@
-.close{
+.close {
   display: none;
   position: absolute;
+
   @include square(50px);
   top: 0;
   right: 0;
@@ -8,26 +9,28 @@
   border: 0;
 
   &:hover,
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
-.close__line{
+
+.close__line {
   display: none;
   position: absolute;
+
   @include size(21px, 1px);
   background-color: $black;
   left: 15px;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     @include pseudo();
     @include size(21px, 1px);
     background-color: $black;
     top: 6px;
   }
 
-  &:before {
+  &::before {
     top: -7px;
   }
 }

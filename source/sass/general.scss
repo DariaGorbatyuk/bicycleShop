@@ -9,7 +9,10 @@ img {
   display: block;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font: inherit;
 }
 
@@ -19,7 +22,7 @@ a {
   cursor: pointer;
 }
 
-a:not([href]){
+a:not([href]) {
   cursor: auto;
 }
 
