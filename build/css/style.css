@@ -641,6 +641,7 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 4.8%;
+  gap: 4.9%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -659,7 +660,6 @@ svg {
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
   min-width: 237px;
-  margin-right: 4.9%;
   position: relative;
   z-index: 1; }
   .types li::before {
