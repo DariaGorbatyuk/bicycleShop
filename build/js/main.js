@@ -1,31 +1,6 @@
-'use strict';
-ymaps.ready(function () {
-  const myMap = new ymaps.Map('map', {
-      center: [59.938635, 30.323118],
-      zoom: 16
-    }, {
-      searchControlProvider: 'yandex#search'
-    }),
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'Магазин MooN',
-      balloonContent: 'Магазин велосипедов MooN'
-    }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/fav32.png',
-      iconImageSize: [32, 32],
-      iconImageOffset: [-16, -16]
-    });
-
-  myMap.geoObjects
-    .add(myPlacemark);
-});
-
 const pageHeader = document.querySelector('.header');
-const headerToggle = document.querySelector('.menu__toggle');
+const menu = document.querySelector('.menu');
+const headerToggle = menu.querySelector('.menu__toggle');
 const body = document.querySelector('.page__body')
 
 pageHeader.classList.remove('header--no-js');
@@ -35,10 +10,12 @@ headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('header--closed')) {
     pageHeader.classList.remove('header--closed');
     pageHeader.classList.add('header--opened');
-    body.style = 'overflow: hidden'
+    body.style = 'overflow: hidden';
+    menu.style = 'overflow: auto';
   } else {
     pageHeader.classList.add('header--closed');
     pageHeader.classList.remove('header--opened');
-    body.style = 'overflow: visible'
+    body.style = 'overflow: visible';
+    menu.style = '';
   }
 });
