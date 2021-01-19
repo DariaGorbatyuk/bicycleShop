@@ -397,10 +397,7 @@ svg {
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  grid-template-columns: 20% 30% 30% 20%;
   position: relative;
   padding: 0 2.5% 9px 2%; }
   .menu__list::after {
@@ -423,7 +420,7 @@ svg {
   word-break: break-word;
   -ms-flex-preferred-size: auto;
       flex-basis: auto; }
-  .menu__item:nth-child(4n+2), .menu__item:nth-child(4n+3) {
+  .menu__item:nth-child(4n+3) {
     justify-self: center; }
   .menu__item:nth-child(4n+4) {
     justify-self: end; }

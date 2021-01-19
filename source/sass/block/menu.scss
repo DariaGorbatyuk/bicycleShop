@@ -13,8 +13,7 @@
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  column-gap: 10px;
+  grid-template-columns: 20% 30% 30% 20%;
   position: relative;
   padding: 0 2.5% 9px 2%;
 
@@ -35,8 +34,7 @@
   min-width: 0;
   word-break: break-word;
   flex-basis: auto;
-
-  &:nth-child(4n+2),
+  
   &:nth-child(4n+3) {
     justify-self: center;
   }
