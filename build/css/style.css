@@ -631,6 +631,9 @@ svg {
       font-size: 24px;
       line-height: 41px;
       margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .types h2 {
+      padding: 0 15px; } }
 
 .types ul {
   margin: 0;
@@ -641,14 +644,14 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 4.8%;
-  gap: 4.9%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 1023px) {
     .types ul {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 0 6.2%; } }
   @media (max-width: 767px) {
     .types ul {
@@ -660,9 +663,8 @@ svg {
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
   min-width: 237px;
-  position: relative;
-  z-index: 1; }
-  .types li::before {
+  position: relative; }
+  .types li .types__img-wrapper::before {
     content: "";
     display: block;
     position: absolute;
@@ -670,7 +672,7 @@ svg {
     background-color: transparent; }
   .types li:first-child {
     margin-top: 10px; }
-    .types li:first-child::before {
+    .types li:first-child .types__img-wrapper::before {
       width: 180px;
       height: 180px;
       border-radius: 50%;
@@ -680,26 +682,27 @@ svg {
       z-index: -1; }
   .types li:nth-child(2n) {
     margin-top: 40px; }
-    .types li:nth-child(2n)::before, .types li:nth-child(2n)::after {
+    .types li:nth-child(2n) .types__img-wrapper::before,
+    .types li:nth-child(2n) .types__img-wrapper::after {
       width: 47px;
       height: 47px;
       border: 8px solid #0ad9c6;
       z-index: 1;
       left: -20px;
       top: -20px; }
-    .types li:nth-child(2n)::after {
+    .types li:nth-child(2n) .types__img-wrapper::after {
       content: "";
       display: block;
       position: absolute;
       z-index: 1;
       background-color: transparent;
       top: auto;
-      bottom: 5%;
+      bottom: -27px;
       left: auto;
       right: -6%; }
   .types li:last-child {
     margin-right: 0; }
-    .types li:last-child::before {
+    .types li:last-child .types__img-wrapper::before {
       width: 95px;
       height: 95px;
       border-radius: 50%;
@@ -708,24 +711,26 @@ svg {
       top: -32px; }
   @media (max-width: 1023px) {
     .types li {
-      -ms-flex-preferred-size: 270px;
-          flex-basis: 270px;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+      min-width: 300px;
       margin-right: 0;
       margin-bottom: 50px; }
       .types li:first-child {
         margin-top: 0; }
-        .types li:first-child::before {
+        .types li:first-child .types__img-wrapper::before {
           width: 127px;
           height: 127px;
           border: 18px solid #0ad9c6;
-          bottom: 27px;
-          left: -38px;
+          bottom: -27px;
+          left: -46px;
           top: auto; }
       .types li:nth-child(2n) {
         margin-top: 0; }
-        .types li:nth-child(2n)::before, .types li:nth-child(2n)::after {
+        .types li:nth-child(2n) .types__img-wrapper::before,
+        .types li:nth-child(2n) .types__img-wrapper::after {
           display: none; }
-      .types li:last-child::before {
+      .types li:last-child .types__img-wrapper::before {
         width: 68px;
         height: 68px;
         border: 13px solid #0ad9c6;
@@ -733,20 +738,23 @@ svg {
         top: -20px; } }
   @media (max-width: 767px) {
     .types li {
-      margin-bottom: 42px; }
-      .types li:first-child::before {
-        bottom: 25px;
-        left: -23px; }
-      .types li:last-child::before {
+      margin-bottom: 42px;
+      min-width: 300px; }
+      .types li:first-child .types__img-wrapper::before {
+        bottom: -28px;
+        left: -25px; }
+      .types li:last-child .types__img-wrapper::before {
         right: -15px; } }
 
 .types__img-wrapper {
   width: 100%;
-  overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 23px; }
+  margin-bottom: 23px;
+  position: relative;
+  z-index: 1; }
   @media (max-width: 1023px) {
     .types__img-wrapper {
+      margin: 0 auto 20px;
       width: 270px;
       height: 300px; } }
   @media (max-width: 767px) {
@@ -755,7 +763,12 @@ svg {
 
 .types img {
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  border-radius: 10px; }
+  @media (max-width: 1023px) {
+    .types img {
+      width: 270px;
+      height: 300px; } }
 
 .types span {
   font-weight: 600;
