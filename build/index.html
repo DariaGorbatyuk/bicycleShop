@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,8 @@
   <link rel="apple-touch-icon-precomposed" href="img/fav180.png" sizes="180x180">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page__body">
-<header class="page__header header header--no-js">
+<body>
+<header class="header header--no-js">
   <!--  header--no-js; header--opened; header--closed-->
   <div class="container">
     <nav class="header__menu menu">
@@ -44,11 +44,11 @@
         <form class="header__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__item">
             <label class="visually-hidden" for="name">Имя</label>
-            <input id="name" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+            <input id="name" type="text" name="name" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё]+$" required="">
           </div>
           <div class="form__item">
             <label class="visually-hidden" for="tel">Телефон</label>
-            <input id="tel" type="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="\+?[0-9]{11,12}" required="">
+            <input id="tel" type="tel" name="tel" placeholder="Введите Ваш номер телефона" maxlength="18" minlength="11" pattern="\+?[\s\-()0-9]{11,18}$" required="">
           </div>
           <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -56,9 +56,9 @@
     </div>
   </div>
 </header>
-<main class="page__main">
+<main>
   <h1 class="visually-hidden">Магазин велосипедов MooN</h1>
-  <section id="about" class="page__about about">
+  <section id="about" class="about">
     <div class="container">
       <h2>Несколько фактов о нас</h2>
       <ul>
@@ -69,7 +69,7 @@
       </ul>
     </div>
   </section>
-  <section id="types" class="page__types types">
+  <section id="types" class="types">
     <div class="container container--footer">
       <h2>Виды велосипедов</h2>
       <ul>
@@ -112,7 +112,7 @@
       </ul>
     </div>
   </section>
-  <section id="video" class="page__video video">
+  <section id="video" class="video">
     <div class="container">
       <div class="video__desc ">
         <h2>Видео про велосипеды</h2>
@@ -134,7 +134,7 @@
     </div>
   </section>
 </main>
-<footer id="footer" class="page__footer footer">
+<footer id="footer" class="footer">
   <div class="container container--footer">
     <h2>Как нас найти?</h2>
     <address>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>

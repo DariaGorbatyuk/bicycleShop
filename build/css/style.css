@@ -99,12 +99,12 @@ svg {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.page {
+html {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.page__body {
+body {
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
