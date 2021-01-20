@@ -8,15 +8,29 @@
   pageHeader.classList.remove('header--no-js');
   pageHeader.classList.add('header--closed');
 
+  function closeHeader() {
+    pageHeader.classList.add('header--closed');
+    pageHeader.classList.remove('header--opened');
+    body.classList.remove('overflow');
+  }
+
+  function openHeader() {
+    pageHeader.classList.remove('header--closed');
+    pageHeader.classList.add('header--opened');
+    body.classList.add('overflow');
+  }
+
   headerToggle.addEventListener('click', function () {
     if (pageHeader.classList.contains('header--closed')) {
-      pageHeader.classList.remove('header--closed');
-      pageHeader.classList.add('header--opened');
-      body.classList.add('overflow');
+      openHeader();
     } else {
-      pageHeader.classList.add('header--closed');
-      pageHeader.classList.remove('header--opened');
-      body.classList.remove('overflow');
+      closeHeader();
     }
+  });
+  menu.addEventListener('click', function (evt) {
+    if (!evt.target.classList.contains('menu__link')) {
+      return;
+    }
+    closeHeader();
   });
 })();

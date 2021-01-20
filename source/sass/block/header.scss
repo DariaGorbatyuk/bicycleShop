@@ -78,12 +78,24 @@
       padding-top: 0;
 
       .menu__item {
+        margin-bottom: 28px;
+      }
+
+      .menu__item:last-child {
+        margin-bottom: 0;
+      }
+
+      .menu__link {
+        display: block;
         width: 100%;
         background-color: $gray;
         max-width: 100%;
         padding: 17px;
         padding-right: 36px;
-        margin-bottom: 28px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: $gray-menu-text;
         position: relative;
 
         &::after {
@@ -96,17 +108,6 @@
           background-position: center;
           right: 17px;
         }
-      }
-
-      .menu__item:last-child {
-        margin-bottom: 0;
-      }
-
-      .menu__link {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 140%;
-        color: $gray-menu-text;
       }
 
       .menu__list {
