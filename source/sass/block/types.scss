@@ -28,6 +28,7 @@
     line-height: 41px;
     margin-bottom: 30px;
   }
+
   @media (max-width: $s-end) {
     padding: 0 15px;
   }
@@ -151,6 +152,7 @@
   @media (max-width: $s-end) {
     margin-bottom: 42px;
     min-width: 300px;
+
     &:first-child {
       .types__img-wrapper::before {
         bottom: -28px;
@@ -174,8 +176,8 @@
   z-index: 1;
 
   @media (max-width: $m-end) {
-    margin: 0 auto 20px;
     @include size(270px, 300px);
+    margin: 0 auto 20px;
   }
 
   @media (max-width: $s-end) {

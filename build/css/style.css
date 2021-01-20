@@ -99,6 +99,9 @@ svg {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.overflow {
+  overflow: hidden; }
+
 html {
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -388,7 +391,8 @@ body {
   margin-left: auto;
   width: 873px;
   margin-right: auto;
-  margin-bottom: 254px; }
+  margin-bottom: 254px;
+  overflow: auto; }
   @media (max-width: 1023px) {
     .menu {
       width: auto; } }
@@ -761,9 +765,9 @@ body {
   z-index: 1; }
   @media (max-width: 1023px) {
     .types__img-wrapper {
-      margin: 0 auto 20px;
       width: 270px;
-      height: 300px; } }
+      height: 300px;
+      margin: 0 auto 20px; } }
   @media (max-width: 767px) {
     .types__img-wrapper {
       margin-bottom: 20px; } }

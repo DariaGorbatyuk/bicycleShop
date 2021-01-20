@@ -1,8 +1,9 @@
-(() => {
-  const pageHeader = document.querySelector('.header');
-  const menu = document.querySelector('.menu');
-  const headerToggle = menu.querySelector('.menu__toggle');
-  const body = document.querySelector('.page__body')
+'use strict';
+(function () {
+  var pageHeader = document.querySelector('.header');
+  var menu = document.querySelector('.menu');
+  var headerToggle = menu.querySelector('.menu__toggle');
+  var body = document.querySelector('body');
 
   pageHeader.classList.remove('header--no-js');
   pageHeader.classList.add('header--closed');
@@ -11,13 +12,11 @@
     if (pageHeader.classList.contains('header--closed')) {
       pageHeader.classList.remove('header--closed');
       pageHeader.classList.add('header--opened');
-      body.style = 'overflow: hidden';
-      menu.style = 'overflow: auto';
+      body.classList.add('overflow')
     } else {
       pageHeader.classList.add('header--closed');
       pageHeader.classList.remove('header--opened');
-      body.style = 'overflow: visible';
-      menu.style = '';
+      body.classList.remove('overflow')
     }
   });
-})()
+})();

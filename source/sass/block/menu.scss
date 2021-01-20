@@ -3,6 +3,7 @@
   width: 873px;
   margin-right: auto;
   margin-bottom: 254px;
+  overflow: auto;
 
   @media (max-width: $m-end) {
     width: auto;
@@ -25,7 +26,7 @@
     left: 0;
   }
 
-  @media (max-width: $m-end){
+  @media (max-width: $m-end) {
     display: flex;
   }
 }
@@ -40,7 +41,7 @@
   }
 
   &:nth-child(4n+4) {
-      justify-self: end;
+    justify-self: end;
   }
 }
 
