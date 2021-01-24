@@ -625,10 +625,11 @@ svg {
   @media (max-width: 1023px) {
     .types {
       padding-top: 48px;
-      padding-bottom: 15px; } }
+      padding-bottom: 20px; } }
   @media (max-width: 767px) {
     .types {
-      padding-top: 48px; } }
+      padding-top: 48px;
+      padding-bottom: 15px; } }
 
 .types h2 {
   font-weight: 600;
